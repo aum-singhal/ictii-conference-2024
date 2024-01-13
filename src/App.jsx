@@ -9,17 +9,24 @@ function App() {
   return (
     <>
 
-      <div className="landing-section">
+      <div className="landing-section flex-d-col flex-j-cen padding-3-2">
 
+        <div className="font-56 font-rubic-mono">
+          The Wait is Over!!
+        </div>
+        <div className="font-20 semi-bold padding-0-1">
+          Launching the biggest conference on Technological Innovations in Industry {"("}ICTII 2024{")"}
+        </div>
 
-        <div className="flex">
+        <br /><br />
+        <div className="flex flex-wrap">
           <a className='register' href="">Register for Event</a>
           <a className='submit-paper' href="">Submit Paper</a>
         </div>
       </div>
       
       <div className="about-conference padding-3-2">
-        <div className="font-36 font-rubic-mono text-left">About the Conference {"("}ICTTI2024{")"}</div>
+        <div className="font-36 font-rubic-mono text-left">About the Conference {"("}ICTTI 2024{")"}</div>
         <br />
         <div className="font-20 medium-bold text-justify padding-0-1">
         <div className="font-24 font-rubic-mono">-{">"} Overview</div>
@@ -37,6 +44,8 @@ function App() {
         Dronacharya College of Engineering, Gurgaon is imparting technical education since 1998. 
         The college is undoubtedly, a preferred choice of budding engineers where every aspirant gets an equal opportunity to think, wonder, visualize, explore experiment and design his career as per his interest and demands of the MNCs. 
         Here, we promote the growth of entrepreneurs, technocrats and engineers who contribute to the services of the society and Nation. 
+        
+        <br /><br />
         We, at Dronacharya College of Engineering, are absolutely committed to serve the society and improve the mode of life by imparting high quality education in the field of Engineering and Management catering to the explicit and implicit needs of the students, society, humanity and industry. "Shiksha evam Sahayata" i.e. 
         Education and Help are the two words etched on our banner soaring higher year after year. 
         Our goal is to continuously improve the healthy learning environment and facilities being provided to the students to achieve academic excellence for employability as world class Technocrats and Managers, apart from making them noble human beings of a nation growing from strength to strength, dispelling the darkness of ignorance and ameliorating the society by means of philanthropic endeavors. 
@@ -44,7 +53,7 @@ function App() {
 
         <br /><br />
 
-        For more information, <a href="">Check our Official Website</a>
+        For more information, <a href="https://ggnindia.dronacharya.info/" target='_blank'>Check our Official Website</a>
         </div>
       </div>
 
@@ -59,7 +68,7 @@ function App() {
 
         <br /><br />
 
-        <div className="flex">
+        <div className="flex flex-wrap">
           <a className='register' href="">Register for Event</a>
           <a className='submit-paper' href="">Submit Paper</a>
         </div>
