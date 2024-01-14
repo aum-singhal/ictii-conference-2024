@@ -7,9 +7,10 @@
       align-items: center;
       justify-content: space-around;
       flex-wrap: wrap;
+      gap: 1.5rem;
 
       :is(img){
-        height: 5rem;
+        height: 5.25rem;
 
         &:hover{
           transform: scale(1.05);

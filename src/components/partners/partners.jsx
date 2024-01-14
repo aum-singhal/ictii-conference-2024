@@ -5,6 +5,8 @@ import gfg from "../../assets/partners/gfg.png"
 import ict from "../../assets/partners/ict.png"
 import ieee from "../../assets/partners/ieee.png"
 import iste from "../../assets/partners/iste.jpeg"
+import nasscom from "../../assets/partners/nasscom.png";
+import infosys from "../../assets/partners/infosys.png";
 
 export default function Partners () {
 
@@ -23,6 +25,7 @@ export default function Partners () {
       <div className="image-container">
         <img src={acm} alt="" /><img src={csi} alt="" />
         <img src={ieee} alt="" /><img src={iste} alt="" />
+        <img src={nasscom} alt="" /><img src={infosys} alt="" />
       </div>
     </div>
 

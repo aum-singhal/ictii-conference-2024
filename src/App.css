@@ -44,7 +44,7 @@
     border-radius: .5rem;
   
     .item{
-      width: 100%;
+      width: clamp(320px, 100%, 100%);
       padding: 1rem 1.5rem;
       display: flex;
 
@@ -131,7 +131,7 @@
     border-radius: .75rem;
     font-size: 1.35rem;
     line-height: 1.5rem;
-    font-weight: 600;
+    font-weight: 400;
     font-family: 'Passion One', sans-serif;
   
     &:hover{

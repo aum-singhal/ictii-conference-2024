@@ -73,7 +73,7 @@ function App() {
 
       <div className="objective padding-2-3">
         <div className="font-36 bold text-center">Objective of ICTII, 24</div>
-
+        <br />
         <div className="objective-elements">
           {
             objective.map((item,index)=><div key={index} className='item'>

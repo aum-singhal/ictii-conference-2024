@@ -8,7 +8,7 @@ export default function Convernor(){
     {name: "Dr. Ghanshyam Singh", title:"Professor, University of Johannesburg"},
     {name: "Dr. Shyam S. Pandey", title:"Assistant Profess, Kyushu Institute of Technology"},
     {name:"Dr. Ashima Mehta", title:"HOD, DCE"},
-    {name:"Dr. Shimpy Goyal", title:"Assistant Professor, DCE"},
+    {name:"Dr. Manoj Kumar", title:"Assistant Professor, DCE"},
     {name:"Ms Renu Narwal", title:"Assistant Professor, DCE"},
     {name: "Dr. Hansraj Yadav", title:"Registrar, DCE"}
   ]
