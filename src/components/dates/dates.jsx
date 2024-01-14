@@ -1,10 +1,10 @@
 import "./dates.css";
 
 export default function ImportantDates (){
-  return <div className="important-dates padding-3-2">
+  return <div id="dates" className="important-dates padding-3-2">
     <div className="font-28 font-rubic-mono text-center">Important Dates</div>
     
-    <br />
+    <br /><br />
 
     <div className="flex-a-cen-j-cen flex-wrap">
       <div className="date-card">

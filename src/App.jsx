@@ -2,42 +2,82 @@ import { useState } from 'react'
 import './App.css'
 import Papers from './components/papers/papers'
 import ImportantDates from './components/dates/dates'
+import Navbar from './components/navbar/navbar'
+import { FaRegCheckCircle } from "react-icons/fa";
+import Partners from './components/partners/partners'
+import Convernor from './components/convernor/convernor'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+  const objective = [
+    {title: "Emerging Industry 5.0 Challenges", desc:" Includes areas like advanced materials, AI and robotics, intelligent manufacturing, data security, and human-machine interaction."},
+    {title: "Prominent Solutions and Research Directions", desc:"Encourage debate and discussion on existing approaches and opportunities for further innovation."},
+    {title:"Collaboration Across Sectors", desc:"Facilitate networking and knowledge exchange to bridge the gap between research and practical applications."},
+    {title:"Identifying Research Gaps and Needs", desc:"This could involve discussions on funding opportunities, infrastructure development, and talent acquisition."},
+    {title:"Showcasing Successful Collaborations", desc:" Use case studies to demonstrate the value of cross-disciplinary partnerships in tackling industrial challenges."},
+  ]
 
   return (
     <>
+      <Navbar />
+      <div id='home' className="landing-section flex-d-col flex-j-cen padding-3-2">
 
-      <div className="landing-section flex-d-col flex-j-cen padding-3-2">
-
-        <div className="font-56 font-rubic-mono">
-          The Wait is Over!!
+        <div className="font-28 semi-bold">
+          International Conferrence on 
+          <br />
+          <div className="title bold">
+            Technological Innovations in Industry 5.0 (ICTII)
+          </div>
         </div>
-        <div className="font-20 semi-bold padding-0-1">
-          Launching the biggest conference on Technological Innovations in Industry {"("}ICTII 2024{")"}
+        <div className="font-22 medium-bold">
+          Organised by: Dronacharya College of Engineering (DCE)
         </div>
 
-        <br /><br />
+        <br />
         <div className="flex flex-wrap">
-          <a className='register' href="">Register for Event</a>
-          <a className='submit-paper' href="">Submit Paper</a>
+          <a className='submit-paper' href="">Abstract Submition</a>
+          <a className='register' href="">Register</a>
+        </div>
+      </div>
+
+      <div id='about' className="conference-details flex">
+        <div className="dates item">
+          <div className="font-24 bold">Conference Date</div>
+          <div className="font-20 semi-bold">25<sup>th</sup> Feb, 2024</div>
+        </div>
+        <div className="venue item">
+          <div className="font-24 bold">Conference Venue</div>
+          <div className="font-20 semi-bold">DCE, Khentawas, Gurgaon, India</div>
+        </div>
+        <div className="contact item">
+
         </div>
       </div>
       
-      <div className="about-conference padding-3-2">
-        <div className="font-36 font-rubic-mono text-left">About the Conference {"("}ICTTI 2024{")"}</div>
-        <br />
-        <div className="font-20 medium-bold text-justify padding-0-1">
-        <div className="font-24 font-rubic-mono">-{">"} Overview</div>
-        Industry 5.0 is the next industrial revolution to leverage the creativity of human experts in collaboration with efficient, intelligent and collaborative robots.  It will obtain resource-efficient and user preferred manufacturing solutions. The potential applications of Industry 5.0 are intelligent healthcare, cloud manufacturing, supply chain management and manufacturing production. The supporting technologies for Industry 5.0 are edge computing, digital-twins collaborative robots, Internet of every things, blockchain, and 6G and beyond networks.
-        <br /><br />
-        <div className="font-24 font-rubic-mono">-{">"} Objective</div>
-        The aim of this conference is to highlight various state-of-art potential challenges to be addressed to researchers, academicians, and industry and with their prominent solutions. ICTITI 24 aims to bring the researchers, academicians, industry, and government personnel together to share and discuss the various challenges, research gaps towards innovations in industry 5.0. It will provide common platform of discussion to various research scholars and academicians to explore new challenges with their solutions. We hope that ICTITI 24 will lead to significant contributions to the knowledge base in these technologies.
+      <div className="about-conference padding-0-1">
+        <div className="font-36 bold  text-center">Industry 5.0</div>
+        <div className="font-20 medium-bold text-justify padding-2-3">
+          Industry 5.0 is the next industrial revolution to leverage the creativity of human experts in collaboration with efficient, intelligent and collaborative robots.  
+          It will obtain resource-efficient and user preferred manufacturing solutions. 
+          The potential applications of Industry 5.0 are intelligent healthcare, cloud manufacturing, supply chain management and manufacturing production. 
+          The supporting technologies for Industry 5.0 are edge computing, digital-twins collaborative robots, Internet of every things, blockchain, and 6G and beyond networks.
         </div>
       </div>
 
-      <div className="about-college padding-3-2">
+      <div className="objective padding-2-3">
+        <div className="font-36 bold text-center">Objective of ICTII, 24</div>
+
+        <div className="objective-elements">
+          {
+            objective.map((item,index)=><div key={index} className='item'>
+              <div className="title bold font-22 flex-a-cen"><FaRegCheckCircle /> &nbsp; {item.title}</div>
+               <div className="font-18 semi-bold">{item.desc}</div>
+            </div>)
+          }
+        </div>
+      </div>
+
+      {/* <div className="about-college padding-3-2">
         <div className="font-36 text-center font-rubic-mono">About the College</div>
         <br />
         <div className="font-20 medium-bold text-justify padding-0-1">
@@ -55,10 +95,15 @@ function App() {
 
         For more information, <a href="https://ggnindia.dronacharya.info/" target='_blank'>Check our Official Website</a>
         </div>
-      </div>
+      </div> */}
 
       <ImportantDates />
+
+      <Convernor />
+
       <Papers />
+
+      <Partners />
 
       <div className="register-section padding-3-2">
         <div className="font-56 font-bebas">

@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&display=swap');
 
+:root{
+  --sky-blue: #51DEF1;
+  --light-yellow: #F7E11B;
+  --maroon-red: #F64174;
+}
 
 *{
   margin: 0;
@@ -10,70 +15,126 @@
   transition: .3s;
 }
 
-.landing-section{
-  height: 100vh;
-  background-color: #120044;
-  color: white;
 
-  .font-20{
-    width: 55ch;
-  }
-}
 
-/* .about-conference{
-  background-image: url("./assets/conference.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: rgba(0,0,0,.65);
-  background-blend-mode: multiply;
-  color: white;
-} */
-
-.about-college{
-  background-image: url("./assets/campus.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: rgba(0,0,0,.65);
-  background-blend-mode: multiply;
-  color: white;
-
-  :is(a){
+  .landing-section{
+    height: 80vh;
+    background-color: #12004498;
     color: white;
-    text-decoration: underline;
+    border-radius: .75rem;
+    margin: 3rem 1.5rem 0 1.5rem;
+    background-image: url("./assets/conference.jpg");
+    background-size: cover;
+    background-blend-mode: multiply;
+  
+    .font-20{
+      width: 55ch;
+    }
+  
+    .title{
+      font-size: clamp(1rem, 0.1518rem + 2.7143vw, 2.1875rem) !important;
+    }
+  }
+  
+  .conference-details{
+    width: 85%;
+    margin: 0 auto;
+    position: relative;
+    bottom: 50px;
+    border-radius: .5rem;
+  
+    .item{
+      width: 100%;
+      padding: 1rem 1.5rem;
+  
+      &:first-child{
+        border-radius: .5rem 0 0 .5rem;
+      }
+  
+      &:last-child{
+        border-radius: 0 .5rem .5rem 0;
+      }
+
+      &:hover{
+        transform: scale(1.05);
+        cursor: default;
+      }
+    }
+  
+    .dates{
+      background-color: #51DEF1;
+    }
+  
+    .venue{
+      background-color: #F7E11B;
+    }
+  
+    .contact{
+      background-color: #F64174;
+    }
+  }
+
+.objective{
+
+  .objective-elements{
+    width: 80%;
+    margin: 0 auto;
+    .item{
+      margin: 1rem;
+
+      :is(svg){
+        color: green;
+      }
+    }
   }
 }
 
-.register-section{
-  background-color: #242424;
-  color: white;
-
-  .font-56{
-    letter-spacing: 3px;
-    line-height: 3.5rem;
-  }
-}
-
-.register, .submit-paper{
-  color: #242424;
-  background-color: white;
-  border: 1px solid white;
-  padding: 1.25rem 2.5rem;
-  margin: .5rem 1rem;
-  border-radius: .75rem;
-  font-size: 1.5rem;
-  line-height: 1.5rem;
-  font-weight: 600;
-  font-family: 'Passion One', sans-serif;
-
-  &:hover{
-    background-color: transparent;
+  /* .about-college{
+    background-image: url("./assets/campus.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0,0,0,.65);
+    background-blend-mode: multiply;
     color: white;
+  
+    :is(a){
+      color: white;
+      text-decoration: underline;
+    }
+  } */
+  
+  .register-section{
+    background-color: #242424;
+    color: white;
+  
+    .font-56{
+      letter-spacing: 3px;
+      line-height: 3.5rem;
+    }
   }
-}
+  
+  .register, .submit-paper{
+    color: #242424;
+    background-color: white;
+    border: 1px solid white;
+    padding: .75rem 2rem;
+    margin: .5rem 1rem;
+    border-radius: .75rem;
+    font-size: 1.35rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    font-family: 'Passion One', sans-serif;
+  
+    &:hover{
+      background-color: transparent;
+      color: white;
+    }
+  }
+
 
 .padding-0-1{padding: 0 1rem;}
+.padding-2-3{padding: 2rem 3rem;}
 .padding-3-2{padding: 3rem 2rem;}
 
 .font-rubic-mono{font-family: 'Rubik Mono One', monospace; letter-spacing: -1px;}

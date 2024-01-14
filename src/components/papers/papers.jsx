@@ -18,7 +18,7 @@ export default function Papers (){
 
   return <div className="flex papers flex-d-col">
     <div className="text-center font-28 font-rubic-mono">
-      Tracks to Explore!!
+      Session Tracks
     </div>
     <br />
     <div className="flex">
