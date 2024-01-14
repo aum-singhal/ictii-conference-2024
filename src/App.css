@@ -46,6 +46,14 @@
     .item{
       width: 100%;
       padding: 1rem 1.5rem;
+      display: flex;
+
+      .left{
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        padding-right: 1rem;
+      }
   
       &:first-child{
         border-radius: .5rem 0 0 .5rem;

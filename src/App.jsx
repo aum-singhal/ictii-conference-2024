@@ -4,6 +4,7 @@ import Papers from './components/papers/papers'
 import ImportantDates from './components/dates/dates'
 import Navbar from './components/navbar/navbar'
 import { FaRegCheckCircle } from "react-icons/fa";
+import { MdDateRange, MdLocationOn  } from "react-icons/md";
 import Partners from './components/partners/partners'
 import Convernor from './components/convernor/convernor'
 
@@ -42,12 +43,18 @@ function App() {
 
       <div id='about' className="conference-details flex">
         <div className="dates item">
-          <div className="font-24 bold">Conference Date</div>
-          <div className="font-20 semi-bold">25<sup>th</sup> Feb, 2024</div>
+          <div className="left"><MdDateRange /></div>
+          <div className="right">
+            <div className="font-24 bold">Conference Date</div>
+            <div className="font-20 semi-bold">25<sup>th</sup> Feb, 2024</div>
+          </div>
         </div>
         <div className="venue item">
-          <div className="font-24 bold">Conference Venue</div>
-          <div className="font-20 semi-bold">DCE, Khentawas, Gurgaon, India</div>
+          <div className="left"><MdLocationOn /></div>
+          <div className="right">
+            <div className="font-24 bold">Conference Venue</div>
+            <div className="font-20 semi-bold">DCE, Khentawas, Gurgaon, India</div>
+          </div>
         </div>
         <div className="contact item">
 
