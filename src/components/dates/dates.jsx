@@ -33,7 +33,7 @@ export default function ImportantDates (){
           </div>
         
         <div className="font-20 medium-bold">
-          25<sup>th</sup> Feb, 2024
+          26<sup>th</sup>-27<sup>th</sup> Feb, 2024
         </div>
       </div>
     </div>
