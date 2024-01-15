@@ -1,32 +1,47 @@
 .convernor{
 
-  .con-images{
-    gap: .75rem;
+  .con-groups{
+    gap: 2rem;
     justify-content: center;
+    
+    .con-images{
+      gap: .75rem;
+      justify-content: center;
 
-    .item{
-      padding: .5rem;
-      width: 200px;
-      aspect-ratio: 4/5;
-      background-color: rgba(0,0,0,.25);
-      justify-content: flex-end;
-      overflow: hidden;
-      position: relative;
-      background-blend-mode: multiply;
-
-      :is(img){
-        object-fit: cover;
-        position: absolute;
-        z-index: 0;
+      .font-20{
+        margin-bottom: .5rem;
       }
 
-      &:hover{
-        padding: .75rem;
+      .image-holder{
+        gap: 1.5rem;
 
-        :is(img, div){
-          transform: scale(1.05);
+        .item{
+          padding: .5rem;
+          width: 200px;
+          aspect-ratio: 4/5;
+          background-color: rgba(0,0,0,.25);
+          justify-content: flex-end;
+          overflow: hidden;
+          position: relative;
+          background-blend-mode: multiply;
+    
+          :is(img){
+            object-fit: cover;
+            position: absolute;
+            z-index: 0;
+          }
+    
+          &:hover{
+            padding: .75rem;
+    
+            :is(img, div){
+              transform: scale(1.05);
+            }
+          }
         }
       }
+  
     }
   }
+
 }
