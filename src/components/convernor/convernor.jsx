@@ -7,6 +7,7 @@ import hansraj from "../../assets/faculty/hansrajYadav.jpg";
 import manoj from "../../assets/faculty/manojKumar.jpg";
 import director from "../../assets/faculty/director.jpg";
 import ghansham from "../../assets/faculty/ghansham.png";
+import shyam from "../../assets/faculty/shyam.jpg";
 
 export default function Convernor(){
   const data=[
@@ -27,7 +28,7 @@ export default function Convernor(){
       head: "Chief Person",
       person: [
         {name: "Dr. Ghanshyam Singh", title:"Professor, University of Johannesburg", img: ghansham},
-        {name: "Dr. Shyam S. Pandey", title:"Assistant Profess, Kyushu Institute of Technology"},
+        {name: "Dr. Shyam S. Pandey", title:"Assistant Profess, Kyushu Institute of Technology",img:shyam},
       ]
     },
     {
