@@ -1,5 +1,9 @@
 .important-dates{
-  background-color: rgba(0,0,0,.05);
+  background: radial-gradient(246.17% 68.38% at 50% 50%, rgba(0, 0, 0, 0.70) 0%, rgba(0, 44, 76, 0.70) 63.9%, rgba(0, 108, 185, 0.70) 99.69%);
+
+  .heading{
+    color: white;
+  }
 
   .flex-wrap{
     gap: 2.5%;
@@ -10,7 +14,7 @@
       border-radius: .75rem;
       padding: 2.5rem 1.5rem;
       text-align: center;
-      background-color: #e4a64e;
+      background-color: white;
       position: relative;
 
       .title{
@@ -18,6 +22,11 @@
         letter-spacing: -1px;
         font-size: 22px;
         font-weight: 700;
+        margin-bottom: 1.25rem;
+      }
+
+      .font-18{
+        color: #006CB9;
       }
     }
   }

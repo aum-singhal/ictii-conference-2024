@@ -7,53 +7,57 @@ import { FaRegCheckCircle } from "react-icons/fa";
 import { MdDateRange, MdLocationOn  } from "react-icons/md";
 import Partners from './components/partners/partners'
 import Convernor from './components/convernor/convernor'
+import landing from "./assets/landing.png";
 
 function App() {
   const [count, setCount] = useState(0);
   const objective = [
-    {title: "Emerging Industry 5.0 Challenges", desc:" Includes areas like advanced materials, AI and robotics, intelligent manufacturing, data security, and human-machine interaction."},
-    {title: "Prominent Solutions and Research Directions", desc:"Encourage debate and discussion on existing approaches and opportunities for further innovation."},
-    {title:"Collaboration Across Sectors", desc:"Facilitate networking and knowledge exchange to bridge the gap between research and practical applications."},
-    {title:"Identifying Research Gaps and Needs", desc:"This could involve discussions on funding opportunities, infrastructure development, and talent acquisition."},
-    {title:"Showcasing Successful Collaborations", desc:" Use case studies to demonstrate the value of cross-disciplinary partnerships in tackling industrial challenges."},
+    {color: "#FF2461",title: "Emerging Industry 5.0 Challenges", desc:" Includes areas like advanced materials, AI and robotics, intelligent manufacturing, data security, and human-machine interaction."},
+    {color: "#FC7F0B",title: "Prominent Solutions and Research Directions", desc:"Encourage debate and discussion on existing approaches and opportunities for further innovation."},
+    {color: "#039903",title:"Collaboration Across Sectors", desc:"Facilitate networking and knowledge exchange to bridge the gap between research and practical applications."},
+    {color: "#720CAD",title:"Identifying Research Gaps and Needs", desc:"This could involve discussions on funding opportunities, infrastructure development, and talent acquisition."},
+    {color: "#006CB9",title:"Showcasing Successful Collaborations", desc:" Use case studies to demonstrate the value of cross-disciplinary partnerships in tackling industrial challenges."},
   ]
 
   return (
     <>
       <Navbar />
-      <div id='home' className="landing-section flex-d-col flex-j-cen padding-3-2">
+      <div id='home' className="landing-section flex-d-col flex-j-cen padding-3-2 text-center">
 
-        <div className="font-28 semi-bold">
-          International Conferrence on 
-          <br />
+        <div className="flex-d-col">
+          <div className="font-28 semi-bold">
+            International Conference on 
+          </div>
           <div className="title bold">
             Technological Innovations in Industry 5.0 (ICTII)
           </div>
-        </div>
-        <div className="font-22 medium-bold">
-          Organised by: Dronacharya College of Engineering (DCE)
+          <div className="font-20 medium-bold">
+            Organised by: <span className='semi-bold'>Dronacharya College of Engineering (DCE)</span>
+          </div>
         </div>
 
         <br />
-        <div className="flex flex-wrap">
-          <a className='submit-paper' href="">Abstract Submition</a>
-          <a className='register' href="">Register</a>
-        </div>
+        <div className="flex-j-cen flex-wrap">
+          <a className='register bold' href="">Register</a>
+          <a className='submit-paper bold' href="">Abstract Submission</a>
+        </div> 
+
+        <img src={landing} alt="" />
       </div>
 
       <div id='about' className="conference-details flex">
         <div className="dates item">
           <div className="left"><MdDateRange /></div>
           <div className="right">
-            <div className="font-24 bold">Conference Date</div>
-            <div className="font-20 semi-bold">26<sup>th</sup>-27<sup>th</sup> Feb, 2024</div>
+            <div className="font-20 bold">Conference Date</div>
+            <div className="font-14 semi-bold">26<sup>th</sup>-27<sup>th</sup> Feb, 2024</div>
           </div>
         </div>
         <div className="venue item">
           <div className="left"><MdLocationOn /></div>
           <div className="right">
-            <div className="font-24 bold">Conference Venue</div>
-            <div className="font-20 semi-bold">DCE, Khentawas, Gurgaon, India</div>
+            <div className="font-20 bold">Conference Venue</div>
+            <div className="font-14 semi-bold">DCE, Khentawas, Gurgaon, India</div>
           </div>
         </div>
         <div className="contact item">
@@ -77,7 +81,7 @@ function App() {
         <div className="objective-elements">
           {
             objective.map((item,index)=><div key={index} className='item'>
-              <div className="title bold font-22 flex-a-cen"><FaRegCheckCircle /> &nbsp; {item.title}</div>
+              <div style={{color: item.color}} className="title bold font-22 flex-a-cen"><FaRegCheckCircle /> &nbsp; {item.title}</div>
                <div className="font-18 semi-bold">{item.desc}</div>
             </div>)
           }
@@ -112,17 +116,15 @@ function App() {
 
       <Partners />
 
-      <div className="register-section padding-3-2">
-        <div className="font-56 font-bebas">
-          So what are you waiting for,
-          <br /> Register Now!!
+      <div className="register-section flex-d-col padding-3-2">
+        <div className="font-30 bold">
+          So what are you waiting for, &nbsp;
+          <span className='font-36'>Register Now!!</span>
         </div>
 
-        <br /><br />
-
         <div className="flex flex-wrap">
-          <a className='register' href="">Register for Event</a>
-          <a className='submit-paper' href="">Submit Paper</a>
+          <a className='register bold' href="">Register</a>
+          <a className='submit-paper bold' href="">Abstract Submission</a>
         </div>
 
       </div>

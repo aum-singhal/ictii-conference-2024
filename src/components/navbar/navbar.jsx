@@ -6,8 +6,9 @@ export default function Navbar (){
     {title: "Home", link: "#home"},
     {title: "Industry 5.0", link: "#about"},
     {title: "Important Dates", link: "#dates"},
-    {title: "Submission", link: ""},
-    {title: "Register", link: ""},
+    {title: "Tracks", link: "#tracks"},
+    {title: "Submission", link: "#home"},
+    {title: "Register", link: "#home"},
   ];
 
   const [navExpanded, setNavExpanded] = useState(false);

@@ -2,38 +2,38 @@ import "./dates.css";
 
 export default function ImportantDates (){
   return <div id="dates" className="important-dates padding-3-2">
-    <div className="font-28 font-rubic-mono text-center">Important Dates</div>
+    <div className="font-30 heading semi-bold text-center">Important Dates</div>
     
     <br /><br />
 
     <div className="flex-a-cen-j-cen flex-wrap">
       <div className="date-card">
-        <div className="title font-22 semi-bold">
-          Full Length Paper Submission
+        <div className="title font-20 semi-bold">
+          Paper Submission
           </div>
         
-        <div className="font-20 medium-bold">
+        <div className="font-18 medium-bold">
           10<sup>th</sup> Feb, 2024
         </div>
       </div>
 
       <div className="date-card">
-        <div className="title font-22 semi-bold">
+        <div className="title font-20 semi-bold">
           Acceptance
           </div>
         
-        <div className="font-20 medium-bold">
+        <div className="font-18 medium-bold">
           20<sup>th</sup> Feb, 2024
         </div>
       </div>
 
       <div className="date-card">
-        <div className="title font-22 semi-bold">
+        <div className="title font-20 semi-bold">
           Registration
           </div>
         
-        <div className="font-20 medium-bold">
-          26<sup>th</sup>-27<sup>th</sup> Feb, 2024
+        <div className="font-18 medium-bold">
+          25<sup>th</sup> Feb, 2024
         </div>
       </div>
     </div>

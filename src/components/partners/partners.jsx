@@ -18,13 +18,20 @@ export default function Partners () {
         <img src={ict} alt="" /><img src={gfg} alt="" />
       </div>
     </div>
-    <br /><br /><br />
+    <br /><br />
     <div className="knowledge">
       <div className="font-28 bold text-center">Our Technical Partners</div>
       <br /><br />
       <div className="image-container">
         <img src={acm} alt="" /><img src={csi} alt="" />
         <img src={ieee} alt="" /><img src={iste} alt="" />
+      </div>
+    </div>
+    <br /><br />
+    <div className="knowledge">
+      <div className="font-28 bold text-center">Our Industrial Partners</div>
+      <br /><br />
+      <div className="image-container">
         <img src={nasscom} alt="" /><img src={infosys} alt="" />
       </div>
     </div>

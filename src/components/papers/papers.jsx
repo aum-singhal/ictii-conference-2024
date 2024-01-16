@@ -16,7 +16,7 @@ export default function Papers (){
     {title: "Advanced Robotics and Automation in Industry 5.0", img: robotics}
   ];
 
-  return <div className="flex papers flex-d-col">
+  return <div id="tracks" className="flex papers flex-d-col">
     <div className="text-center font-28 font-rubic-mono">
       Session Tracks
     </div>
