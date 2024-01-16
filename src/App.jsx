@@ -32,7 +32,7 @@ function App() {
             Technological Innovations in Industry 5.0 (ICTII)
           </div>
           <div className="font-20 medium-bold">
-            Organised by: <span className='semi-bold'>Dronacharya College of Engineering (DCE)</span>
+            Organised by: <span className='semi-bold'>Dronacharya College of Engineering, Gurugram</span>
           </div>
         </div>
 
