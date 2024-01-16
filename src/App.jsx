@@ -50,7 +50,7 @@ function App() {
           <div className="left"><MdDateRange /></div>
           <div className="right">
             <div className="font-20 bold">Conference Date</div>
-            <div className="font-14 semi-bold">26<sup>th</sup>-27<sup>th</sup> Feb, 2024</div>
+            <div className="font-14 semi-bold">26<sup>th</sup>-27<sup>th</sup> April, 2024</div>
           </div>
         </div>
         <div className="venue item">

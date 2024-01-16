@@ -13,7 +13,7 @@ export default function ImportantDates (){
           </div>
         
         <div className="font-18 medium-bold">
-          10<sup>th</sup> Feb, 2024
+          5<sup>th</sup> April, 2024
         </div>
       </div>
 
@@ -23,7 +23,7 @@ export default function ImportantDates (){
           </div>
         
         <div className="font-18 medium-bold">
-          20<sup>th</sup> Feb, 2024
+          15<sup>th</sup> April, 2024
         </div>
       </div>
 
@@ -33,7 +33,7 @@ export default function ImportantDates (){
           </div>
         
         <div className="font-18 medium-bold">
-          25<sup>th</sup> Feb, 2024
+          25<sup>th</sup> April, 2024
         </div>
       </div>
     </div>
