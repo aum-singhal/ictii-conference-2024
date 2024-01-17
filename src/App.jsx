@@ -81,7 +81,7 @@ function App() {
           </div>
           <img
             className="image2"
-            src="/src/assets/ICTII Logo.png"
+            src="/src/assets/ICTII_Logo.png"
             alt="ICTII Logo"
           />
         </div>
