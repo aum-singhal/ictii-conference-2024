@@ -10,7 +10,7 @@ import Partners from "./components/partners/partners";
 import Convernor from "./components/convernor/convernor";
 import landing from "./assets/landing.png";
 import ICTII_Logo from "./assets/ICTII_Logo.png";
-import DCE_Logo from "./assets/DRONACHARYA_LOGO.gif";
+import DCE_Logo from "./assets/DCE_Logo.png";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -49,35 +49,35 @@ function App() {
         id="home"
         className="landing-section flex-d-col flex-j-cen padding-3-2 text-center"
       >
-        <div className="flex">
-          <img className="image1" src={DCE_Logo} alt="DCE Logo" />
-          <div>
-            <div className="flex-d-col">
-              <div className="font-28 semi-bold">
-                International Conference on
-              </div>
-              <div className="title bold">
-                Technological Innovations in Industry 5.0 (ICTII)
-              </div>
-              <div className="font-20 medium-bold">
-                Organised by:{" "}
-                <span className="semi-bold">
-                  Dronacharya College of Engineering, Gurugram
-                </span>
-              </div>
-            </div>
+        <div className=" home-container">
+          <div className="flex logo-container">
+            <img className="image1" src={DCE_Logo} alt="DCE Logo" />
 
-            <br />
-            <div className="flex-j-cen flex-wrap">
-              <a className="register bold" href="">
-                Register
-              </a>
-              <a className="submit-paper bold" href="">
-                Full Lenght Paper Submission
-              </a>
+            <img className="image2" src={ICTII_Logo} alt="ICTII Logo" />
+          </div>
+
+          <div className="flex-d-col">
+            <div className="font-28 semi-bold">International Conference on</div>
+            <div className="title bold">
+              Technological Innovations in Industry 5.0 (ICTII)
+            </div>
+            <div className="font-24 medium-bold">
+              Organised by:{" "}
+              <span className="semi-bold">
+                Dronacharya College of Engineering, Gurugram
+              </span>
             </div>
           </div>
-          <img className="image2" src={ICTII_Logo} alt="ICTII Logo" />
+
+          <br />
+          <div className="flex-j-cen flex-wrap">
+            <a className="register bold" href="">
+              Register
+            </a>
+            <a className="submit-paper bold" href="">
+              Full Length Paper Submission
+            </a>
+          </div>
         </div>
 
         <img className="background-image" src={landing} alt="" />
@@ -111,7 +111,7 @@ function App() {
             <GoClock />
           </div>
           <div className="right">
-            <div className="font-20 bold">Workshop Timings</div>
+            <div className="font-20 bold">Workshop</div>
             <div className="font-14 semi-bold">To be announced</div>
           </div>
         </div>
@@ -189,7 +189,7 @@ function App() {
             Register
           </a>
           <a className="submit-paper bold" href="">
-            Full Lenght Paper Submission
+            Full Length Paper Submission
           </a>
         </div>
       </div>

@@ -12,14 +12,14 @@ import shyam from "../../assets/faculty/shyam.jpg";
 export default function Convernor() {
   const data = [
     {
-      head: "Cheif Patron",
+      head: "Cheif Patrons",
       person: [
         { name: "Dr. B/M/k. Prasad", title: "Director, DCE", img: director },
         { name: "Dr. Isha Malhotra", title: "Principal, DCE", img: principal },
       ],
     },
     {
-      head: "Co-Patrons",
+      head: "Co-Patron",
       person: [
         {
           name: "Prof. Yashwardhan Soni",
@@ -29,7 +29,7 @@ export default function Convernor() {
       ],
     },
     {
-      head: "Chief Person",
+      head: "Chief Persons",
       person: [
         {
           name: "Dr. Ghanshyam Singh",
@@ -48,7 +48,7 @@ export default function Convernor() {
       person: [{ name: "Dr. Ashima Mehta", title: "HOD, DCE", img: ashima }],
     },
     {
-      head: "Convenor",
+      head: "Convenors",
       person: [
         {
           name: "Dr. Manoj Kumar",
