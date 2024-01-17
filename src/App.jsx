@@ -9,6 +9,8 @@ import { GoClock } from "react-icons/go";
 import Partners from "./components/partners/partners";
 import Convernor from "./components/convernor/convernor";
 import landing from "./assets/landing.png";
+import ICTII_Logo from "./assets/ICTII_Logo.png";
+import DCE_Logo from "./assets/DRONACHARYA_LOGO.gif";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -48,11 +50,7 @@ function App() {
         className="landing-section flex-d-col flex-j-cen padding-3-2 text-center"
       >
         <div className="flex">
-          <img
-            className="image1"
-            src="/src/assets/DRONACHARYA_LOGO.gif"
-            alt="DCE Logo"
-          />
+          <img className="image1" src={DCE_Logo} alt="DCE Logo" />
           <div>
             <div className="flex-d-col">
               <div className="font-28 semi-bold">
@@ -79,11 +77,7 @@ function App() {
               </a>
             </div>
           </div>
-          <img
-            className="image2"
-            src="/src/assets/ICTII_Logo.png"
-            alt="ICTII Logo"
-          />
+          <img className="image2" src={ICTII_Logo} alt="ICTII Logo" />
         </div>
 
         <img className="background-image" src={landing} alt="" />
