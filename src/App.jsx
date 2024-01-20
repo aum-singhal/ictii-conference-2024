@@ -71,10 +71,16 @@ function App() {
 
           <br />
           <div className="flex-j-cen flex-wrap">
-            <a className="register bold" href="">
+            <a
+              className="register bold"
+              href="/src/assets/papers/conference_brochure.pdf"
+            >
               Register
             </a>
-            <a className="submit-paper bold" href="">
+            <a
+              className="submit-paper bold"
+              href="/src/assets/papers/splnproc1703_mac.pdf"
+            >
               Full Length Paper Submission
             </a>
           </div>
@@ -178,7 +184,7 @@ function App() {
 
       <Partners />
 
-      <div className="register-section flex-d-col padding-3-2">
+      {/* <div className="register-section flex-d-col padding-3-2">
         <div className="font-30 bold">
           So what are you waiting for, &nbsp;
           <span className="font-36">Register Now!!</span>
@@ -192,7 +198,7 @@ function App() {
             Full Length Paper Submission
           </a>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
