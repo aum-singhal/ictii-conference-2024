@@ -5,11 +5,14 @@ export default function Navbar() {
   const data = [
     { title: "Home", link: "#home" },
     { title: "About DCE", link: "https://ggnindia.dronacharya.info/" },
+    {
+      title: "Previous Papers",
+      link: "https://ggnindia.dronacharya.info/events/ICCCS2018.aspx?Month=Dec&Year=2018",
+    },
     { title: "Industry 5.0", link: "#about" },
     { title: "Important Dates", link: "#dates" },
     { title: "Tracks", link: "#tracks" },
     { title: "Submission", link: "#home" },
-    { title: "Register", link: "#home" },
   ];
 
   const [navExpanded, setNavExpanded] = useState(false);

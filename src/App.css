@@ -45,8 +45,8 @@
   }
 
   .image2 {
-    object-fit: cover;
-    width: 15%;
+    object-fit: scale-down;
+    width: 20%;
   }
 
   .logo-container {
