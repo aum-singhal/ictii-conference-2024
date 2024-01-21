@@ -36,7 +36,7 @@
   }
 
   .home-container {
-    margin-top: -8rem;
+    margin-top: -12rem;
   }
 
   .image1 {
@@ -46,14 +46,13 @@
 
   .image2 {
     object-fit: scale-down;
-    width: 20%;
+    width: 10%;
   }
 
   .logo-container {
     justify-content: space-between;
     height: 13rem;
-    padding-right: 1rem;
-    padding-left: 1rem;
+
   }
 
   .logo-background {

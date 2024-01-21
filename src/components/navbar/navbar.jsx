@@ -6,7 +6,7 @@ export default function Navbar() {
     { title: "Home", link: "#home" },
     { title: "About DCE", link: "https://ggnindia.dronacharya.info/" },
     {
-      title: "Previous Papers",
+      title: "Previous Coneferences",
       link: "https://ggnindia.dronacharya.info/events/ICCCS2018.aspx?Month=Dec&Year=2018",
     },
     { title: "Industry 5.0", link: "#about" },
