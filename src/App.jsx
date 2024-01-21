@@ -11,6 +11,8 @@ import Convernor from "./components/convernor/convernor";
 import landing from "./assets/landing.png";
 import ICTII_Logo from "./assets/ICTII_Logo.png";
 import DCE_Logo from "./assets/DCE_Logo.png";
+import Paper_submission from "./assets/papers/splnproc1703_mac.pdf";
+import Registration from "./assets/papers/conference_brochure.pdf";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -71,16 +73,10 @@ function App() {
 
           <br />
           <div className="flex-j-cen flex-wrap">
-            <a
-              className="register bold"
-              href="/src/assets/papers/conference_brochure.pdf"
-            >
+            <a className="register bold" href={Registration} target="/">
               Register
             </a>
-            <a
-              className="submit-paper bold"
-              href="/src/assets/papers/splnproc1703_mac.pdf"
-            >
+            <a className="submit-paper bold" href={Paper_submission} target="/">
               Full Length Paper Submission
             </a>
           </div>
