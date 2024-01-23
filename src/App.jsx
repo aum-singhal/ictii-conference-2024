@@ -74,7 +74,7 @@ function App() {
           <br />
           <div className="flex-j-cen flex-wrap">
             <a className="register bold" href={Registration} target="/">
-              Register
+              Register Details
             </a>
             <a className="submit-paper bold" href={Paper_submission} target="/">
               Full Length Paper Submission
@@ -93,7 +93,7 @@ function App() {
           <div className="right">
             <div className="font-20 bold">Conference Date</div>
             <div className="font-14 semi-bold">
-              26<sup>th</sup>-27<sup>th</sup> April, 2024
+              24<sup>th</sup>-25<sup>th</sup> May, 2024
             </div>
           </div>
         </div>
